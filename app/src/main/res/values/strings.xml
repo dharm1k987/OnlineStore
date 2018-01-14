@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Online Store</string>
+    <string name="user_header">Browse Items</string>
+    <string name="view_cart">View Cart</string>
+    <string name="log_out">Log Out</string>
+    <string name="employee_header">What would you like to do?</string>
+    <string name="make_employee">Make new Employee</string>
+    <string name="make_customer">Make new Customer</string>
+    <string name="make_account">Make new Account</string>
+    <string name="auth_employee">Authenticate new Employee</string>
+    <string name="restock_inventory">Restock Inventory</string>
+    <string name="cart_header">Your Cart</string>
+    <string name="checkout">Checkout</string>
+    <string name="continue_shopping">Continue shopping</string>
+    <string name="restore_cart">Restore cart</string>
+    <string name="title_activity_login">Sign in</string>
+    <!--  Strings related to login  -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">Your password is too short</string>
+    <string name="error_incorrect_password">Your password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">
+"Contacts permissions are needed for providing email completions."
+</string>
+    <string name="title_activity_customer_sign_up">Customer Setup</string>
+    <string name="login_name_hint">Name</string>
+    <string name="login_pw_hint">Password</string>
+    <string name="login_pw_confirm_hint">Confirm Password</string>
+    <string name="address">Address</string>
+    <string name="set_up">Set Up</string>
+    <!-- Strings related to any employee or user-related activities -->
+    <string name="promote_employee">Promote Employee</string>
+    <string name="view_books">View Books</string>
+    <string name="employee_setup_title">Employee Setup</string>
+    <string name="day">Day</string>
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="admin_greeting">Welcome, Admin.</string>
+    <string name="initializing_database">Initializing Database</string>
+    <string name="new_to_online_store">New to Online Store?</string>
+    <string name="id">ID</string>
+    <string name="log_in">Log In</string>
+    <string name="id_prompt_account">Enter Customer ID</string>
+    <string name="view_accounts">View list of Accounts</string>
+    <string name="activeAcc">Active Accounts</string>
+    <string name="UnactiveAcc">Inactive Accounts</string>
+    <string name="select_option">Select an option:</string>
+    <string name="total_cost">Total cost:</string>
+    <string name="total_items">Total items:</string>
+    <string name="inventoryName">Inventory</string>
+    <string name="restock_tip">Tap the item you want to restock.</string>
+    <string name="items_in_cart">Items in cart:</string>
+    <string name="employee_instruct_finger">Employees can log in using their fingerprint!</string>
+</resources>

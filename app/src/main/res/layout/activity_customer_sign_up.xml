@@ -1,0 +1,125 @@
+<!-- customer Sign Up View -->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorCustomer"
+    tools:context="com.android.group0674.onlinestore.View.CustomerSignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <!-- customer Setup Text info -->
+        <TextView
+            android:id="@+id/customerSetUpTitleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customerLogoImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/title_activity_customer_sign_up"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Input for customer name -->
+        <EditText
+            android:id="@+id/customerNameETxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customerSetUpTitleTxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/login_name_hint"
+            android:inputType="textPersonName" />
+
+        <!-- Input for customer Password -->
+        <EditText
+            android:id="@+id/customerPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/customerNameETxt"
+            android:layout_below="@+id/customerNameETxt"
+            android:layout_marginTop="11dp"
+            android:ems="10"
+            android:hint="@string/login_pw_hint"
+            android:inputType="textPassword" />
+
+        <!-- Input for customer Month of birth -->
+        <EditText
+            android:id="@+id/customerMonthETxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/customerPassword"
+            android:layout_below="@+id/customerPassword"
+            android:layout_marginTop="11dp"
+            android:layout_toStartOf="@+id/customerLogoImage"
+            android:ems="10"
+            android:hint="@string/month"
+            android:inputType="number" />
+
+        <!-- Button for customer Sign up-->
+        <Button
+            android:id="@+id/customerSignUpBtn"
+            android:layout_width="@dimen/login_button_width"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="37dp"
+            android:text="@string/set_up" />
+
+        <!-- Icon representing the customer -->
+        <ImageView
+            android:id="@+id/customerLogoImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:adjustViewBounds="false"
+            android:background="@drawable/adminicon"
+            android:cropToPadding="false" />
+
+        <!-- Input for customer's Day of birth -->
+        <EditText
+            android:id="@+id/customerDayETxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/customerMonthETxt"
+            android:layout_alignBottom="@+id/customerMonthETxt"
+            android:layout_alignEnd="@+id/customerLogoImage"
+            android:layout_alignStart="@+id/customerLogoImage"
+            android:ems="10"
+            android:hint="@string/day"
+            android:inputType="number" />
+
+        <!-- Input for customer's Year of birth -->
+        <EditText
+            android:id="@+id/customerYearETxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/customerDayETxt"
+            android:layout_alignEnd="@+id/customerPassword"
+            android:layout_toEndOf="@+id/customerDayETxt"
+            android:ems="10"
+            android:hint="@string/year"
+            android:inputType="number" />
+
+        <!-- Input for customer's address -->
+        <EditText
+            android:id="@+id/customerAddressETxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/customerMonthETxt"
+            android:layout_below="@+id/customerMonthETxt"
+            android:ems="10"
+            android:hint="@string/address"
+            android:inputType="textPostalAddress" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

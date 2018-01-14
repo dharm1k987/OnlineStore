@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for Admin's view of the app -->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.group0674.onlinestore.View.AdminActivity">
+
+    <!-- To make the Relative layout match the phone body -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- button in order to promote employee -->
+        <Button
+            android:id="@+id/promoteEmployeeBtn"
+            android:layout_width="170dp"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_below="@+id/viewBooksBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:text="@string/promote_employee" />
+
+        <!-- Button for view books -->
+        <Button
+            android:id="@+id/viewBooksBtn"
+            android:layout_width="170dp"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_alignStart="@+id/promoteEmployeeBtn"
+            android:layout_below="@+id/adminTitleTxt"
+            android:layout_marginTop="69dp"
+            android:text="@string/view_books" />
+
+        <!-- Title text "Welcome, Admin. -->
+        <TextView
+            android:id="@+id/adminTitleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/adminLogoImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:text="@string/admin_greeting"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Image symbolizing admin at the top of the layout -->
+        <ImageView
+            android:id="@+id/adminLogoImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp"
+            android:adjustViewBounds="false"
+            android:background="@drawable/adminicon"
+            android:cropToPadding="false" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

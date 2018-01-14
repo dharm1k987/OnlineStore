@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- shopping cart view -->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.group0674.onlinestore.View.CartActivity"
+    android:background="@color/colorCustomer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Relative layout to store the items in this activity -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- Added a bit of space above to make the screen look better -->
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_vertical_margin"
+                android:id="@+id/space" />
+
+            <!-- Title for the screen "Your Cart"-->
+            <TextView
+                android:id="@+id/cartHeaderTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/space"
+                android:text="@string/cart_header"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <!-- Image symbolising shopping cart -->
+
+            <!-- list view that will show all the items in the store -->
+            <ListView
+                android:id="@+id/listCart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/cartHeaderTxt"
+                android:layout_marginBottom="152dp" />
+
+            <!-- Button to check out the items -->
+            <Button
+                android:id="@+id/checkoutBtn"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_above="@+id/restoreCartBtn"
+                android:layout_centerHorizontal="true"
+                android:paddingHorizontal="100dp"
+                android:text="@string/checkout" />
+
+            <!-- Button to restore the previous cart -->
+            <Button
+                android:id="@+id/restoreCartBtn"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/checkoutBtn"
+                android:text="@string/restore_cart" />
+
+            <!-- Button to continue shopping when the user is done with the cart -->
+            <Button
+                android:id="@+id/continueShoppingBtn"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/restoreCartBtn"
+                android:text="@string/continue_shopping" />
+
+            <TextView
+                android:id="@+id/lblTotalCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/checkoutBtn"
+                android:layout_alignStart="@+id/checkoutBtn"
+                android:text="@string/total_cost"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Employee's set up look in the app -->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorEmployee"
+    tools:context="com.android.group0674.onlinestore.View.EmployeeSignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <!-- Title for employee set up -->
+        <TextView
+            android:id="@+id/employeeSetupTitleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/employeeLogoImage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="@string/employee_setup_title"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Text field to enter the name -->
+        <EditText
+            android:id="@+id/employeeNameETxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/employeeSetupTitleTxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/login_name_hint"
+            android:inputType="textPersonName" />
+
+        <!-- Text field to enter the employee password-->
+        <EditText
+            android:id="@+id/employeePasswordETxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/employeeNameETxt"
+            android:layout_below="@+id/employeeNameETxt"
+            android:layout_marginTop="11dp"
+            android:ems="10"
+            android:hint="@string/login_pw_hint"
+            android:inputType="textPassword" />
+
+        <!-- Text field to enter employee month of birth -->
+        <EditText
+            android:id="@+id/employeeMonthETxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/employeePasswordETxt"
+            android:layout_below="@+id/employeePasswordETxt"
+            android:layout_marginTop="11dp"
+            android:layout_toStartOf="@+id/employeeLogoImage"
+            android:ems="10"
+            android:hint="@string/month"
+            android:inputType="number" />
+
+        <!-- Button for set up of the employee -->
+        <Button
+            android:id="@+id/employeeSignUpBtn"
+            android:layout_width="@dimen/login_button_width"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="37dp"
+            android:text="@string/set_up" />
+
+        <!-- Image to represent the employee set up page -->
+        <ImageView
+            android:id="@+id/employeeLogoImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            app:srcCompat="@drawable/employeeicon" />
+
+        <!-- Text field to enter employee day of birth -->
+        <EditText
+            android:id="@+id/employeeDayETxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/employeeMonthETxt"
+            android:layout_alignBottom="@+id/employeeMonthETxt"
+            android:layout_alignEnd="@+id/employeeLogoImage"
+            android:layout_alignStart="@+id/employeeLogoImage"
+            android:ems="10"
+            android:hint="@string/day"
+            android:inputType="number" />
+
+        <!-- Text field to enter employee year of birth -->
+
+        <EditText
+            android:id="@+id/employeeYearETxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/employeeDayETxt"
+            android:layout_alignEnd="@+id/employeePasswordETxt"
+            android:layout_toEndOf="@+id/employeeDayETxt"
+            android:ems="10"
+            android:hint="@string/year"
+            android:inputType="number" />
+
+        <!-- Text field to enter the employee address -->
+        <EditText
+            android:id="@+id/employeeAddressETxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/employeeMonthETxt"
+            android:layout_below="@+id/employeeMonthETxt"
+            android:ems="10"
+            android:hint="@string/address"
+            android:inputType="textPostalAddress" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

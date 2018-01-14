@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Employee's view of the app -->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.group0674.onlinestore.View.EmployeeActivity"
+    android:background="@color/colorEmployee">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="146dp">
+
+        <!-- Tile for employee's view -->
+        <TextView
+            android:id="@+id/employeeActivityHeaderTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="@string/employee_header"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <!-- Button to make a new employee-->
+        <Button
+            android:id="@+id/makeNewEmployeeBtn"
+            android:layout_width="@dimen/employee_action_width"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/employeeActivityHeaderTxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:drawableLeft="@drawable/ic_person_add_white_24dp"
+            android:text="@string/make_employee"
+            android:textAlignment="viewStart" />
+
+        <!-- Button to make a new customer-->
+        <Button
+            android:id="@+id/makeNewCustomerBtn"
+            android:layout_width="@dimen/employee_action_width"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/makeNewEmployeeBtn"
+            android:layout_below="@+id/makeNewEmployeeBtn"
+            android:drawableLeft="@drawable/ic_person_add_white_24dp"
+            android:text="@string/make_customer"
+            android:textAlignment="viewStart" />
+
+        <!-- Button to make a new account-->
+        <Button
+            android:id="@+id/makeNewAccountBtn"
+            android:layout_width="@dimen/employee_action_width"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/makeNewCustomerBtn"
+            android:layout_below="@+id/makeNewCustomerBtn"
+            android:drawableLeft="@drawable/ic_person_add_white_24dp"
+            android:text="@string/make_account"
+            android:textAlignment="viewStart" />
+
+        <!-- Button to authenticate a new employee-->
+        <Button
+            android:id="@+id/authenticateNewEmployeeBtn"
+            android:layout_width="@dimen/employee_action_width"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/makeNewAccountBtn"
+            android:layout_below="@+id/makeNewAccountBtn"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/ic_person_outline_white_24dp"
+            android:text="@string/auth_employee"
+            android:textAlignment="center" />
+
+        <!-- Button to restock Inventory-->
+        <Button
+            android:id="@+id/restockInventoryBtn"
+            android:layout_width="@dimen/employee_action_width"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/authenticateNewEmployeeBtn"
+            android:layout_below="@+id/authenticateNewEmployeeBtn"
+            android:drawableLeft="@drawable/ic_archive_white_24dp"
+            android:text="@string/restock_inventory" />
+
+        <!-- Button to restock Inventory-->
+        <Button
+            android:id="@+id/viewAccBtn"
+            android:layout_width="@dimen/employee_action_width"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/restockInventoryBtn"
+            android:layout_below="@+id/restockInventoryBtn"
+            android:drawableLeft="@drawable/ic_format_list_bulleted_white_24dp"
+            android:text="@string/view_accounts" />
+
+        <!-- Button to log out-->
+        <Button
+            android:id="@+id/logOutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/viewBooksBtn"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="13dp"
+            android:layout_marginEnd="13dp"
+            android:text="@string/log_out" />
+
+        <!-- Button to view books-->
+        <Button
+            android:id="@+id/viewBooksBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/saveDatabaseBtn"
+            android:layout_centerHorizontal="true"
+            android:drawableBottom="@drawable/ic_book_white_24dp"
+            android:text="@string/view_books" />
+
+        <Button
+            android:id="@+id/saveDatabaseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/employeeActivityHeaderTxt"
+            android:layout_below="@+id/viewAccBtn"
+            android:layout_marginStart="15dp"
+            android:drawableBottom="@drawable/ic_cloud_upload_white_24dp"
+            android:text="Save Database" />
+
+        <Button
+            android:id="@+id/loadDatabaseBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/employeeActivityHeaderTxt"
+            android:layout_below="@+id/viewAccBtn"
+            android:layout_marginEnd="16dp"
+            android:drawableBottom="@drawable/ic_cloud_download_white_24dp"
+            android:text="Load Database" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.group0674.onlinestore.View.CustomerActivity"
+    android:background="@color/colorEmployee">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/viewActiveBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/viewUnactiveBtn"
+            android:layout_marginTop="72dp"
+            android:drawableLeft="@drawable/ic_person_white_24dp"
+            android:text="@string/activeAcc"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/viewUnactiveBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewActiveBtn"
+            android:layout_centerHorizontal="true"
+            android:drawableLeft="@drawable/ic_person_outline_white_24dp"
+            android:text="@string/UnactiveAcc"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/listOfAccountsTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewUnactiveBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <ListView
+            android:id="@+id/listAcccounts"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/listOfAccountsTv"
+            android:layout_marginTop="22dp"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:text="@string/select_option"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
