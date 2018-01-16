@@ -12,7 +12,7 @@ Here are some cool facts and features:
 
 - All information stored on an internal SQL Database, *which means that data is saved every time you open the application*
 
-  <img src="images/init_db.png" width="20%"> 
+  <img src="images/init_db.png" width="30%"> 
 
 - Users are **employees** and **customers**, where employees can control the store, and customers buy items from it
 
@@ -32,7 +32,7 @@ Here are some cool facts and features:
   - A *special feature* is the ability to **save and load a database**. Remember how I said earlier that the information is stored on a database? This means that you can *transfer store information* from one device to another! Suppose I have bought many items as a customer, then I can *save the database*, and later on *restore it (load it back)* if anything goes wrong. This way you can be sure your store never breaks!
   - An employee can view the books, or see the transactions that have taken place at their store but all the customer. There is also valuable information provided such as total items sold, total sales figures. An employee can view more information by clicking on a sale
 
-  <img src="images/emp_options.png" width="30%"> <img src="images/inv.png" width="30%"><img src="images/books.png" width="30%">
+  <img src="images/emp_options.png" width="30%"> <img src="images/inv.png" width="30%"> <img src="images/books.png" width="30%">
 
   - There are many more features of an employee, but here are the main ones. You can discover more by playing around with the app and clicking on what makes sense
 
@@ -44,7 +44,7 @@ Here are some cool facts and features:
 
   - If the customer has an account, their purchases are automatically saved and will be visible in the employees view books
 
-    <img src="images/buy.png" width="30%"><img src="images/cart.png" width="30%">
+    <img src="images/buy.png" width="30%"> <img src="images/cart.png" width="30%"> 
 
 
 
