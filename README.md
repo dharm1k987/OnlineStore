@@ -1,4 +1,4 @@
-# Online Store
+# Online Store <img src="images/appicon.png" width="7%">
 An Android application that mimics an online store, which has both employees and customers, with options to buy, view transactions, restock inventory, and many more.
 
 # Steps to run:
